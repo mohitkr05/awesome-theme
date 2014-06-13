@@ -18,8 +18,9 @@ require_once locate_template('/inc/relative-urls.php');   // Root relative URLs
 require_once locate_template('/inc/widgets.php');         // Sidebars and widgets
 require_once locate_template('/inc/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/inc/custom.php');          // Custom functions
-require_once locate_template('/inc/admin.php');          // Custom functions
-require_once locate_template('/inc/theme-functions.php');          // Custom functions
-require_once locate_template('/inc/options-functions.php');          // Options based functions
+require_once locate_template('/inc/admin.php');          // Admin view functions
+require_once locate_template('/inc/shortcodes.php');          // Shortcodes
+require_once locate_template('/inc/theme-functions.php');          // Custom theme utilities
+require_once locate_template('/inc/options-functions.php');          // Options framework functions
 
 ?>

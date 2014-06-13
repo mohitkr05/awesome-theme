@@ -13,6 +13,7 @@
 function awesome_bootswatch_theme_load() {
 	$bs_theme = of_get_option( 'awesome_bootswatch' );
 	 wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', true, '9880649384aea9f1ee166331c0a30daa');
+	 wp_enqueue_style('app', get_template_directory_uri() . '/assets/css/app.css', true, '9880649384aea9f1ee166331c0a30daa');
 	wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
 	
 }
@@ -144,7 +145,6 @@ function awesome_heading_font_styles( $option, $selectors ) {
  */
 function awesome_bg_pattern( $classes ) {
 	$pattern = of_get_option( 'awesome_pattern' );
-	
 	if ( 'pattern-1' == $pattern )
 		$classes[] = 'pattern-1';
 	elseif ( 'pattern-2' == $pattern )
@@ -172,6 +172,16 @@ function awesome_bg_pattern( $classes ) {
 }
 add_filter( 'body_class', 'awesome_bg_pattern' );
 
+function awesome_front_page_layout() {
+
+	$hlayout= of_get_option( 'awesome_home_layouts');
+	  if ('two-cols' == $hlayout)
+	  $t= get_template_part('templates/content', 'magazine');
+	  else
+		$t = get_template_part('templates/content', 'linear');
+		
+		return $t;
+}
 
 /**
  * Favicon

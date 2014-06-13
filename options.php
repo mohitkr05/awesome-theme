@@ -148,7 +148,54 @@ function optionsframework_options() {
 		'type' => 'checkbox'
 	);
 						
-	/* ============================== End General Settings ================================= */					
+	/* ============================== End General Settings ================================= */	
+	
+	/* ============================== Start featured content Settings ================================= */					
+	$options[] = array( 
+		'name' => __( 'Featured', 'awesome' ),
+		'type' => 'heading'
+	);
+	
+	$options[] = array( 
+		'name' => __( 'Featured Image 1', 'awesome' ),
+		'desc' => __( 'Upload a featured image for the front page slider' , 'awesome' ),
+		'id'   => 'awesome_featured_image_a',
+		'type' => 'upload'
+	);
+	$options[] = array( 
+		'name' => __( 'Featured Image 2', 'awesome' ),
+		'desc' => __( 'Upload a featured image for the front page slider' , 'awesome' ),
+		'id'   => 'awesome_featured_image_b',
+		'type' => 'upload'
+	);
+	$options[] = array( 
+		'name' => __( 'Featured Image 3', 'awesome' ),
+		'desc' => __( 'Upload a featured image for the front page slider' , 'awesome' ),
+		'id'   => 'awesome_featured_image_c',
+		'type' => 'upload'
+	);
+	
+	$options[] = array( 
+		'name' => __( 'Featured Image 1 content', 'awesome' ),
+		'desc' => __( 'Add the content for featured image', 'awesome' ),
+		'id'   => 'awesome_featured_content_a',
+		'type' => 'textarea'
+	); 		 	 
+
+	$options[] = array( 
+		'name' => __( 'Featured Image 2 content', 'awesome' ),
+		'desc' => __( 'Add the content for featured image', 'awesome' ),
+		'id'   => 'awesome_featured_content_b',
+		'type' => 'textarea'
+	);
+		$options[] = array( 
+		'name' => __( 'Featured Image 3 content', 'awesome' ),
+		'desc' => __( 'Add the content for featured image', 'awesome' ),
+		'id'   => 'awesome_featured_content_c',
+		'type' => 'textarea'
+	);
+	
+	/* ============================== End Featured slider Settings ================================= */					
 	$options[] = array( 
 		'name' => __( 'Theme', 'awesome' ),
 		'type' => 'heading'
