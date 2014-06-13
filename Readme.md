@@ -14,12 +14,6 @@ Features
 - Fixed and fluid layout
 - 2 Front page layouts - Magazine and blog style
 
-Changelog
-========================================================================
-
-Version 0.1
-- added options for bootswatch themes
-- added options for google fonts
 
 Todo
 =====
@@ -27,6 +21,11 @@ Todo
 - Add options for the google analytics
 - Add options for google ads and scripts to be defined at various places
 - Add options for google page based maps.
+
+
+
+Changelog
+========================================================================
 
 
 
@@ -46,7 +45,9 @@ Version 0.2
 
 Version 0.1
 =======================================================================
-First commit
+-First commit
+-added options for bootswatch themes
+-added options for google fonts
 
 
 
