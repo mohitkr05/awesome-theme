@@ -191,6 +191,19 @@ function optionsframework_options() {
 			'onecolumn' => $layoutpath . '1col.png',
 		)
 	);
+	
+	
+	$options[] = array( 
+		'name'    => __( 'Content Layouts', 'awesome' ),
+		'desc'    => __( 'Fixed or Fluid layouts', 'awesome' ),
+		'id'      => 'awesome_content_layouts',
+		'std'     => 'content_fixed',
+		'type'    => 'images',
+		'options' => array(
+			'fixed' => $layoutpath . 'l-mag.png',
+			'fluid'  => $layoutpath . 'l-standard.png'
+		)
+	);
 
 	$options[] = array( 
 		'name'    => __( 'Home Page Layouts', 'awesome' ),

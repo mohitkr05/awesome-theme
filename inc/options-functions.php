@@ -221,6 +221,19 @@ function awesome_custom_layouts($classes) {
 }
 add_filter( 'body_class', 'awesome_custom_layouts' );
 
+
+add_filter('roots_wrap_base', 'roots_wrap_base_cpts'); // Add our function to the roots_wrap_base filter
+
+  function roots_wrap_base_cpts($templates) {
+    $layouts = of_get_option('awesome_content_layouts');// Get the current post type
+    
+    if ($layouts) {
+       array_unshift($templates, 'layouts/base-' . $layouts . '.php'); // Shift the template to the front of the array
+    }
+    
+    return $templates; // Return our modified array with base-$cpt.php at the front of the queue
+  }
+
 /**
  * One-column css
  *
