@@ -39,21 +39,21 @@ Version 0.3
 
 Version 0.2
 =======================================================================
--Added theme options panel
--Added custom functons
--base layouts for fluid and fixed content
+- Added theme options panel
+- Added custom functons
+- base layouts for fluid and fixed content
 
 Version 0.1
 =======================================================================
--First commit
--added options for bootswatch themes
--added options for google fonts
+- First commit
+- added options for bootswatch themes
+- added options for google fonts
 
 
 
 Credits
 ========
 
-Roots - (http://roots.io/starter-theme/)
-Bootstrap - (http://getbootstrap.com)
-Tiga - (https://github.com/satrya/tiga)
+- Roots - (http://roots.io/starter-theme/)
+- Bootstrap - (http://getbootstrap.com)
+- Tiga - (https://github.com/satrya/tiga)

@@ -94,28 +94,13 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array( 
-		'name' => __( 'Readme!', 'awesome' ),
+		'name' => __( 'Welcome', 'awesome' ),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => 'Important Note!',
-		'desc' => '
-			<p>Hello, it\'s been 8 months since I updated this theme. In the next version I will completely remove the theme settings and move it to the Theme Customizer. Please backup your website before updating to the next version.</p>
-			<p>If you new to this theme, you don\'t need to worry about the update. Please just leave the theme settings with it\'s default settings. I will push the update next week.</p>
-			<h4>Removed Settings in the next update</h4>
-			<ol class="ol-decimal">
-				<li>Header and footer scripts</li>
-				<li>iFrame blocker</li>
-				<li>Disable credit links, will changed with customizable footer text.</li>
-				<li>Background patterns.</li>
-				<li>Enable/disable author box, the author box automatically hidden if the user has not fill the descriptions on the profile page.</li>
-			</ol>
-			<p>Another note, for the header and footer scripts settings. I recommended you to install <a href="http://wordpress.org/plugins/header-footer/">http://wordpress.org/plugins/header-footer/</a> plugin if you need to add scripts to the header or footer of your site.</p>
-			<p>Also, I will remove all custom widgets as well. It will be replaced by custom plugins.</p>
-			<p>Thanks for your attention.</p>
-			<p>Best Regards,<br>Satrya</p>
-		',
+		'name' => 'About Us',
+		'desc' => '',
 		'type' => 'info'
 	);
 	

@@ -41,7 +41,7 @@ extract( shortcode_atts( array(
 
 $output = '<div class="fade in alert alert-'. $type . '">';
 if($close == 'true') {
-$output .= '<a class="close" data-dismiss="alert">×</a>';
+$output .= '<a class="close" data-dismiss="alert">x</a>';
 }
 $output .= $text . '</div>';
 
@@ -60,7 +60,7 @@ extract( shortcode_atts( array(
 
 $output = '<div class="fade in alert alert-block alert-'. $type . '">';
 if($close == 'true') {
-$output .= '<a class="close" data-dismiss="alert">×</a>';
+$output .= '<a class="close" data-dismiss="alert">x</a>';
 }
 $output .= '<p>' . $text . '</p></div>';
 

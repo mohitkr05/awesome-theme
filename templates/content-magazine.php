@@ -1,95 +1,42 @@
 
+<?php if (!have_posts()) : ?>
+  <div class="alert alert-warning">
+    <?php _e('Sorry, no results were found.', 'roots'); ?>
+  </div>
+  <?php get_search_form(); ?>
+<?php endif; ?>
 <div class="row">
-
+<?php while (have_posts()) : the_post(); ?>
             <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
+ <article <?php post_class(); ?>>
+  <header>
+    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <?php get_template_part('templates/entry-meta'); ?>
+  </header>
+ 								<?php if( has_post_thumbnail() ) { ?>
 
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
+										<figure class="slides-thumbnail">
+											<?php the_post_thumbnail( 'awesome-300px', array( 'class' => 'img-thumbnail', 'alt' => get_the_title() ) ); ?>
+										</figure>
 
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
+									<?php } ?>
+	
+  <div class="entry-summary">
+    <?php the_excerpt(); ?>
+  </div>
+</article>
+</div>
+<?php endwhile; ?>
+</div>
+<?php if ($wp_query->max_num_pages > 1) : ?>
+  <nav class="post-nav">
+    <ul class="pager">
+      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
+      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+    </ul>
+  </nav>
+<?php endif; ?>
 
-        </div>
 
-        <div class="row">
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#project-link">
-                    <img class="img-responsive" src="http://placehold.it/700x400">
-                </a>
-                <h3><a href="#project-link">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-        </div>
 
         <hr>
