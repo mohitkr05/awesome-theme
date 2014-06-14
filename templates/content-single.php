@@ -8,8 +8,14 @@
       <?php the_content(); ?>
     </div>
     <footer>
+    <?php if( of_get_option( 'awesome_author_box' ) )
+				awesome_the_author();
+			?>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
+    
     </footer>
+    
     <?php comments_template('/templates/comments.php'); ?>
+    
   </article>
 <?php endwhile; ?>
