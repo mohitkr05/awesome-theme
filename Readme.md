@@ -33,6 +33,8 @@ Based on bootstrap
 
 
 - Some Minor changes with respect to code
+- Fixed author box
+- Fixed footer credits
 
 ## Version 0.3
 
