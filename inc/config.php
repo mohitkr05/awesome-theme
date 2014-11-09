@@ -17,8 +17,8 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
 /**
  * .main classes
  */
-function roots_main_class() {
-  if (roots_display_sidebar()) {
+function awesome_main_class() {
+  if (awesome_display_sidebar()) {
     // Classes on pages with the sidebar
     $class = 'col-sm-8';
   } else {
@@ -32,7 +32,7 @@ function roots_main_class() {
 /**
  * .sidebar classes
  */
-function roots_sidebar_class() {
+function awesome_sidebar_class() {
   return 'col-sm-4';
 }
 
@@ -41,8 +41,8 @@ function roots_sidebar_class() {
  *
  * See lib/sidebar.php for more details
  */
-function roots_display_sidebar() {
-  $sidebar_config = new Roots_Sidebar(
+function awesome_display_sidebar() {
+  $sidebar_config = new Awesome_Sidebar(
     /**
      * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
      * Any of these conditional tags that return true won't show the sidebar
@@ -66,7 +66,7 @@ function roots_display_sidebar() {
     )
   );
 
-  return apply_filters('roots_display_sidebar', $sidebar_config->display);
+  return apply_filters('awesome_display_sidebar', $sidebar_config->display);
 }
 
 /**

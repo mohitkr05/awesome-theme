@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: roots WP theme\n"
+"Project-Id-Version: awesome WP theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
@@ -163,8 +163,8 @@ msgid "Use this widget to add a vCard"
 msgstr "Користи го овој виџет, за да додадеш vCard"
 
 #: lib/widgets.php:43
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
+msgid "Awesome: vCard"
+msgstr "Awesome: vCard"
 
 #: lib/widgets.php:70
 msgid "vCard"

@@ -1,14 +1,14 @@
 <?php
 /**
- * Roots initial setup and constants
+ * Awesome initial setup and constants
  */
-function roots_setup() {
+function awesome_setup() {
   // Make theme available for translation
-  load_theme_textdomain('roots', get_template_directory() . '/lang');
+  load_theme_textdomain('awesome', get_template_directory() . '/lang');
 
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
-    'primary_navigation' => __('Primary Navigation', 'roots'),
+    'primary_navigation' => __('Primary Navigation', 'awesome'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
@@ -42,4 +42,4 @@ function roots_setup() {
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style('/assets/css/editor-style.css');
 }
-add_action('after_setup_theme', 'roots_setup');
+add_action('after_setup_theme', 'awesome_setup');

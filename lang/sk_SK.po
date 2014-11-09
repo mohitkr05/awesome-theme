@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: roots\n"
+"Project-Id-Version: awesome\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language-Team: roots\n"
+"Language-Team: awesome\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -164,7 +164,7 @@ msgid "Use this widget to add a vCard"
 msgstr "Použiť widget pre pridanie vCard"
 
 #: lib/widgets.php:47
-msgid "Roots: vCard"
+msgid "Awesome: vCard"
 msgstr "Koreň: vCard"
 
 #: lib/widgets.php:74

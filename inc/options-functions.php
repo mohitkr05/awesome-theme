@@ -12,10 +12,9 @@
 
 function awesome_bootswatch_theme_load() {
 	$bs_theme = of_get_option( 'awesome_bootswatch' );
-	 wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', true, '9880649384aea9f1ee166331c0a30daa');
-	 wp_enqueue_style('app', get_template_directory_uri() . '/assets/css/app.css', true, '9880649384aea9f1ee166331c0a30daa');
+		 wp_enqueue_style('awesome_main', get_template_directory_uri() . '/assets/css/main.min.css', true, '9880649384aea9f1ee166331c0a30daa');
 	wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
-	
+	 wp_enqueue_style('app', get_template_directory_uri() . '/assets/css/app.css', true, '9880649384aea9f1ee166331c0a30daa');
 }
 add_action( 'wp_enqueue_scripts', 'awesome_bootswatch_theme_load' );
 
@@ -232,9 +231,9 @@ function awesome_custom_layouts($classes) {
 add_filter( 'body_class', 'awesome_custom_layouts' );
 
 
-add_filter('roots_wrap_base', 'roots_wrap_base_cpts'); // Add our function to the roots_wrap_base filter
+add_filter('awesome_wrap_base', 'awesome_wrap_base_cpts'); // Add our function to the awesome_wrap_base filter
 
-  function roots_wrap_base_cpts($templates) {
+  function awesome_wrap_base_cpts($templates) {
     $layouts = of_get_option('awesome_content_layouts');// Get the current post type
     
     if ($layouts) {

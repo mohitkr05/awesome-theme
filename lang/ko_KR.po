@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: Roots\n"
+"Project-Id-Version: Awesome\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Alex Lim <contact@simonalex.com>\n"
@@ -156,8 +156,8 @@ msgid "Use this widget to add a vCard"
 msgstr "vCard를 등록하려면 이 위젯을 사용합니다."
 
 #: lib/widgets.php:43
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
+msgid "Awesome: vCard"
+msgstr "Awesome: vCard"
 
 #: lib/widgets.php:70
 msgid "vCard"

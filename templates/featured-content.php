@@ -9,16 +9,16 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="<?php echo of_get_option('awesome_featured_image_a'); ?>" width="100%" alt="First slide">
+          <img src="<?php echo of_get_option('awesome_featured_image_a'); ?>" width="100%" alt="<?php echo of_get_option('awesome_featured_content_a'); ?>">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
-              <p><?php echo of_get_option('awesome_featured_content_a'); ?></p>
+              <p><?php echo of_get_option('awesome_featured_content_a'); ?></p> 
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="<?php echo of_get_option('awesome_featured_image_b'); ?>" width="100%" alt="Second slide">
+          <img src="<?php echo of_get_option('awesome_featured_image_b'); ?>" width="100%" height="500px" alt="<?php echo of_get_option('awesome_featured_content_b'); ?>">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="<?php echo of_get_option('awesome_featured_image_c'); ?>"  width="100%" alt="Third slide">
+          <img src="<?php echo of_get_option('awesome_featured_image_c'); ?>"  width="100%" height="500px" alt="<?php echo of_get_option('awesome_featured_content_c'); ?>">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>

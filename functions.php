@@ -1,6 +1,6 @@
 <?php
 /**
- * Roots includes
+ * Awesome includes
  */
 require_once locate_template('/inc/utils.php');           // Utility functions
 require_once locate_template('/inc/constants.php');          // Custom functions

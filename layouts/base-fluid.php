@@ -3,7 +3,7 @@
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
-      <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
+      <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'awesome'); ?>
     </div>
   <![endif]-->
 
@@ -17,14 +17,14 @@
     }
   ?>
 
-  <div class="wrap" role="document">
+  <div class="wrap container-fluid" role="document">
     <div class="content row">
-      <main class="main <?php echo roots_main_class(); ?>" role="main">
-        <?php include roots_template_path(); ?>
+      <main class="main <?php echo awesome_main_class(); ?>" role="main">
+        <?php include awesome_template_path(); ?>
       </main><!-- /.main -->
-      <?php if (roots_display_sidebar()) : ?>
-        <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
-          <?php include roots_sidebar_path(); ?>
+      <?php if (awesome_display_sidebar()) : ?>
+        <aside class="sidebar <?php echo awesome_sidebar_class(); ?>" role="complementary">
+          <?php include awesome_sidebar_path(); ?>
         </aside><!-- /.sidebar -->
       <?php endif; ?>
     </div><!-- /.content -->

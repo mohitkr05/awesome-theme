@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: Roots\n"
+"Project-Id-Version: Awesome\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Takefumi Ota <taketakegogo@gmail.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ../roots\n"
+"X-Poedit-SearchPath-1: ../awesome\n"
 
 #: 404.php:4
 msgid "Sorry, but the page you were trying to view does not exist."
@@ -165,8 +165,8 @@ msgid "Use this widget to add a vCard"
 msgstr "vCardを追加するには、このウィジェットを使用します"
 
 #: lib/widgets.php:47
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
+msgid "Awesome: vCard"
+msgstr "Awesome: vCard"
 
 #: lib/widgets.php:74
 msgid "vCard"

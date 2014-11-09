@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Roots El\n"
+"Project-Id-Version: Awesome El\n"
 "POT-Creation-Date: 2013-03-01 15:20+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Stelios Fradelakis <sfradel@gmail.com>\n"
@@ -177,8 +177,8 @@ msgid "Use this widget to add a vCard"
 msgstr "Χρησιμοποιήστε αυτό το widget για να προσθέσετε μια vCard"
 
 #: c:\temp\r/lib/widgets.php:47
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
+msgid "Awesome: vCard"
+msgstr "Awesome: vCard"
 
 #: c:\temp\r/lib/widgets.php:74
 msgid "vCard"

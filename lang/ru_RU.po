@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: Roots\n"
+"Project-Id-Version: Awesome\n"
 "Last-Translator: Artem Belov <artbelov@live.ru>\n"
 "Language-Team: Fedor Sumkin <qosys.net@gmail.com>, Di M Dub <zensimilia@gmai.com>, Artem Belov <artbelov@live.ru>\n"
 "MIME-Version: 1.0\n"
@@ -152,7 +152,7 @@ msgid "Use this widget to add a vCard"
 msgstr "Используйте этот виджет для добавления визитной карточки"
 
 #: lib/widgets.php:47
-msgid "Roots: vCard"
+msgid "Awesome: vCard"
 msgstr "Визитная карточка"
 
 #: lib/widgets.php:74

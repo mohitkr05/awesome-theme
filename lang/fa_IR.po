@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: roots\n"
+"Project-Id-Version: awesome\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Javid Momeni <javid.momeni@gmail.com>\n"
@@ -158,7 +158,7 @@ msgid "Use this widget to add a vCard"
 msgstr "استفاده از این ابزار برای اضافه کردن یک کارت ویزیت."
 
 #: lib/widgets.php:47
-msgid "Roots: vCard"
+msgid "Awesome: vCard"
 msgstr "روتز: کارت ویزیت"
 
 #: lib/widgets.php:74

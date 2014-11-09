@@ -1,5 +1,5 @@
-<footer class="content-info fixed_footer" role="contentinfo">
-  <div class="container">
+<footer class="content-info bottom" role="contentinfo">
+      <div class="container">
    	
 	<div id="bottom">
 		<div class="container">

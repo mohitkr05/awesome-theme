@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Project-Id-Version: Translation to Serbian of Roots theme for WordPress\n"
+"Project-Id-Version: Translation to Serbian of Awesome theme for WordPress\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: lautreamont <lautreamont33@gmail.com>\n"
@@ -159,8 +159,8 @@ msgid "Use this widget to add a vCard"
 msgstr "Виџет за додавање vCard-а"
 
 #: lib/widgets.php:47
-msgid "Roots: vCard"
-msgstr "Roots: vCard"
+msgid "Awesome: vCard"
+msgstr "Awesome: vCard"
 
 #: lib/widgets.php:74
 msgid "vCard"

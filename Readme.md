@@ -2,7 +2,7 @@
 Awesome WordPress theme
 ======================================================================
 
-Forked from Roots and Tiga WordPress themes - Check credit.
+Forked from Awesome and Tiga WordPress themes - Check credit.
 Based on bootstrap
 
 ## Features
@@ -60,6 +60,6 @@ Based on bootstrap
 ## Credits
 
 
-- Roots - (http://roots.io/starter-theme/)
+- Awesome - (http://awesome.io/starter-theme/)
 - Bootstrap - (http://getbootstrap.com)
 - Tiga - (https://github.com/satrya/tiga)
