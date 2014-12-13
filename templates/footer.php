@@ -1,38 +1,31 @@
-<footer class="content-info bottom" role="contentinfo">
-      <div class="container">
-   	
-	<div id="bottom">
-		<div class="container">
-			 <div class="row">
-                    <div class="col-md-4">
-                       <?php dynamic_sidebar( 'footer-1' ); ?>
-                    </div>
-                    <div class="col-md-4">
-                       <?php dynamic_sidebar( 'footer-2' ); ?>
-                    </div>
-                    <div class="col-md-4">
-                          <?php dynamic_sidebar( 'footer-3' ); ?>
-                       
-                    </div>
-                </div> <!-- row -->
-		</div>
-	</div>
-	
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-    <?php if( of_get_option( 'awesome_credits' ) == false ) { ?>
+ 
+	<footer id="colophon" class="site-footer" role="contentinfo">
+    	<div class="container">
+        	<div class="col-lg-4 col-md-4 col-sm-12">
+        		 <?php dynamic_sidebar( 'footer1' ); ?>
+        	</div>
+        	<div class="col-lg-4 col-md-4 col-sm-12">
+        		 <?php dynamic_sidebar( 'footer2' ); ?>
+        	</div>
+        	<div class="col-lg-4 col-md-4 col-sm-12">
+        		 <?php dynamic_sidebar( 'footer3' ); ?>
+        	</div>
+        	 
+        </div>
+        <div class="navbar-inverse text-center copyright">
+        	<?php do_action( 'arihant_credits' ); ?>
+					<?php echo of_get_option( 'custom_footer_text', 'unite' ); ?>
+					 
+        </div>
+    </footer>
 
-			<span class="credit">
-				<?php printf( __( 'Powered by <a href="http://wordpress.org/" title="%1$s" rel="generator">%2$s</a> &middot; Theme by <a href="http://kumarmohit.com/" title="%3$s" rel="designer">%4$s</a>', 'awesome' ),
-					esc_attr( 'A multipurpose theme based on Bootstrap'),
-					'WordPress',
-					esc_attr( 'Mohit'),
-					'Mohit'
-				); ?>
-			</span>
+    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+    	<i class="fa fa-angle-double-up"></i>
+    </a>
 
-		<?php } ?>
-		
-  </div>
-</footer>
+		 
+	</footer><!-- #colophon -->
+
 
 <?php wp_footer(); ?>
+ 

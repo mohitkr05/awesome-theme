@@ -12,8 +12,8 @@
 
 function awesome_bootswatch_theme_load() {
 	$bs_theme = of_get_option( 'awesome_bootswatch' );
-		 wp_enqueue_style('awesome_main', get_template_directory_uri() . '/assets/css/main.min.css', true, '9880649384aea9f1ee166331c0a30daa');
-	wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
+	//	 wp_enqueue_style('awesome_main', get_template_directory_uri() . '/assets/css/main.min.css', true, '9880649384aea9f1ee166331c0a30daa');
+	//wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
 	 wp_enqueue_style('app', get_template_directory_uri() . '/assets/css/app.css', true, '9880649384aea9f1ee166331c0a30daa');
 }
 add_action( 'wp_enqueue_scripts', 'awesome_bootswatch_theme_load' );

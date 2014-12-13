@@ -7,19 +7,19 @@ function awesome_widgets_init() {
   register_sidebar(array(
     'name'          => __('Primary', 'awesome'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s panel panel-default">',
+    'before_widget' => '<section class="widget %1$s %2$s widget-area">',
     'after_widget'  => '</section>',
-    'before_title'  => '<div class="panel-heading"><h3 class="panel-title">',
-    'after_title'   => '</h3></div>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
   ));
 	
 	  register_sidebar(array(
     'name'          => __('Secondary', 'awesome'),
     'id'            => 'sidebar-secondary',
-    'before_widget' => '<section class="widget %1$s %2$s panel panel-default">',
+    'before_widget' => '<section class="widget %1$s %2$s widget-area">',
     'after_widget'  => '</section>',
-    'before_title'  => '<div class="panel-heading"><h3 class="panel-title">',
-    'after_title'   => '</h3></div>',
+    'before_title'  => ' <h3 class="widget-title">',
+    'after_title'   => '</h3>',
   ));
 
 
